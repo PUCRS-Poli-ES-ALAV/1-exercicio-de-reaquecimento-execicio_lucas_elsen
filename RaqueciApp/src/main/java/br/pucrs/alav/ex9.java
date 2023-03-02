@@ -36,7 +36,7 @@ public class ex9{
           aux++;
         }
         if (cont < n-1) {
-          ret = ret + combi(a, n, aux, cont, ret);
+          ret = ret + comb(a, n, aux, cont, ret);
         }
         return ret;
     }
