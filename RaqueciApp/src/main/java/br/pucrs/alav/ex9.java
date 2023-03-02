@@ -19,12 +19,8 @@ public class ex9{
     }
 
     public static int fat(int n){
-        if(n==1){
-            return n;
-        }
-        else{
-            return n*fat(n-1);
-        }
+        if(n==1){return n;}
+        else{return n*fat(n-1);}
     }
 
     public static String comb(String[] a, int n, int aux, int cont, String ret){
