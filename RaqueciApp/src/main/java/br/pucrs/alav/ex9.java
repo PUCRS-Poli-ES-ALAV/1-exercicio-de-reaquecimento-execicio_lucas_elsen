@@ -29,14 +29,15 @@ public class ex9{
 
     public static String comb(String[] a, int n, int aux, int cont, String ret){
          ret = ret + a[aux];
-        cont++;
         if (aux == n-1) {
           aux = 0;
         } else {
+          System.out.println(cont+" "+aux);
           aux++;
         }
         if (cont < n-1) {
-          ret = ret + comb(a, n, aux, cont, ret);
+          cont++;
+          ret = comb(a, n, aux, cont, ret);
         }
         return ret;
     }
