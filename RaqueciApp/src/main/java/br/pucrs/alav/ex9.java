@@ -32,7 +32,6 @@ public class ex9{
         if (aux == n-1) {
           aux = 0;
         } else {
-          System.out.println(cont+" "+aux);
           aux++;
         }
         if (cont < n-1) {
