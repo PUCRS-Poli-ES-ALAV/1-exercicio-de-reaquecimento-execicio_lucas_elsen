@@ -13,7 +13,7 @@ public class ex9{
     public static String[] list(String[] a, int n){
         String co[] = new String[fat(n)];
         for (int i = 0; i < co.length; i++) {
-          co[i] = comb(a, n, (i / (n-1)), 0, "");
+          co[i] = comb(a, n, (i % n), 0, "");
         }
         return co;
     }
